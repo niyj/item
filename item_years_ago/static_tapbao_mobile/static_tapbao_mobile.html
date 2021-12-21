@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../common_link/reset.css">
+<link rel="stylesheet" type="text/css" href="static_tapbao_mobile.css">
+<script>
+(function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</head>
+<body>
+<div id="load">
+ <div class="loadshow">
+  <ul>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+  </ul>
+ </div>
+</div>
+<!--头部-->
+<header>
+ <div>
+  <a href="#"><img src="image/header-2.png"><span>&nbsp;寻找宝贝店铺</span></a>
+ </div>
+</header>
+<!--主体-->
+<div id="main">
+ <!--下载-->
+ <div class="main-one" id="mainone">
+  <img src="image/main-one-1.png" id="downnone">
+  <a href="#">
+   <img src="image/main-one-2.png">
+    <div>
+     <h4>打开手机淘宝App</h4>
+     <p class="p1">随时随地 想淘就淘</p>
+    </div>
+    <p class="p2">立即打开</p>
+  </a>
+ </div>
+ <!--轮播-->
+ <div class="main-two" id="show">
+  <div class="img" id="con" style="left:-640px;">
+   <a href="#"><img src="image/main-two-8.jpg"></a>
+   <a href="#"><img src="image/main-two-1.jpg"></a>
+   <a href="#"><img src="image/main-two-2.jpg"></a>
+   <a href="#"><img src="image/main-two-3.jpg"></a>
+   <a href="#"><img src="image/main-two-4.jpg"></a>
+   <a href="#"><img src="image/main-two-5.jpg"></a>
+   <a href="#"><img src="image/main-two-6.jpg"></a>
+   <a href="#"><img src="image/main-two-7.jpg"></a>
+   <a href="#"><img src="image/main-two-8.jpg"></a>
+   <a href="#"><img src="image/main-two-1.jpg"></a>
+  </div>
+  <div class="dot" id="dot">
+   <span class="select"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+ </div>
+ <!--页面链接-->
+ <div class="main-three">
+  <a href="#">
+   <img src="image/main-three-1.png">
+   <p>天猫</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-2.png">
+   <p>聚划算</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-3.png">
+   <p>天猫国际</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-4.png">
+   <p>外卖</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-5.png">
+   <p>天猫超市</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-6.png">
+   <p>充值中心</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-7.png">
+   <p>飞猪旅行</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-8.png">
+   <p>领金币</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-9.png">
+   <p>拍卖</p>
+  </a>
+  <a href="#">
+   <img src="image/main-three-10.png">
+   <p>分类</p>
+  </a>
+ </div>
+ <!--淘宝头条-->
+ <div class="main-four">
+  <a href="#"><img src="image/main-four-1.png"></a>
+  <div class="toutiao" id="toutiao">
+   <div class="toutiaocon" id="toutiaocon" style="top:0;">
+    <a href="#">
+     <div class="con">
+      <img src="image/main-four-2.png" class="imgl">
+      <div>
+       <p>手竿钓鱼，搞清楚铅坠的这五...</p>
+       <p>晚上睡觉在门上贴个创可贴，...</p>
+      </div> 
+      <img src="image/main-four-3.png" class="imgr">
+     </div>
+     <div class="con">
+      <img src="image/main-four-4.png" class="imgl">
+      <div>
+       <p>B超胎心率有快有慢，究竟跟...</p>
+       <p>吉米花园造园记连载（八）</p>
+      </div> 
+      <img src="image/main-four-5.png" class="imgr">
+     </div>
+     <div class="con">
+      <img src="image/main-four-6.png" class="imgl">
+      <div>
+       <p>海贼王革命军直接对抗天龙人...</p>
+       <p>距中国仅45公里，确是唯一未...</p>
+      </div> 
+      <img src="image/main-four-7.png" class="imgr">
+     </div>
+     <div class="con">
+      <img src="image/main-four-2.png" class="imgl">
+      <div>
+       <p>手竿钓鱼，搞清楚铅坠的这五...</p>
+       <p>晚上睡觉在门上贴个创可贴，...</p>
+      </div> 
+      <img src="image/main-four-3.png" class="imgr">
+     </div>
+    </a>
+   </div>
+  </div>
+ </div>
+ <!--重庆专享-->
+ <div class="main-five">
+  <a href="#">
+   <div class="tll">
+    <div class="tllt">
+     <h4>重庆专享</h4>
+     <p>超值精选</p>
+     </div>
+    <img class="tllb" src="image/main-five-1.png">
+   </div>
+   <div class="tlr">
+    <div class="tlrt">
+     <h4>秒杀1分钱</h4>
+     <p>满68送30</p>
+    </div>
+    <img class="tlrb"  src="image/main-five-2.png">
+   </div>
+  </a>
+  <a href="#">
+   <div>
+    <div class="trlt">
+     <h4>有好货</h4>
+     <p>高颜值美物</p>
+     </div>
+    <img src="image/main-five-3.png">
+   </div>
+   <div class="trr">
+    <img class="trrb"  src="image/main-five-4.png">
+   </div>
+  </a>
+  </a>
+  <a href="#">
+   <div>
+    <div class="mllt">
+     <h4>淘抢购</h4>
+     <p></p>
+     </div>
+    <img src="image/main-five-5.png">
+   </div>
+   <div class="trr">
+    <img src="image/main-five-6.png">
+   </div>
+  </a>
+  <a href="#">
+   <div>
+    <div class="mrlt">
+     <h4>必买清单</h4>
+     <p>什么值得买</p>
+     </div>
+    <img src="image/main-five-7.png">
+   </div>
+   <div class="trr">
+    <img src="image/main-five-8.png">
+   </div>
+  </a>
+  <a href="#">
+   <div>
+    <div class="bllt">
+     <h4>爱逛街</h4>
+     <p>有料小视频</p>
+     </div>
+    <img src="image/main-five-9.png">
+   </div>
+   <div class="trr">
+    <img src="image/main-five-10.png">
+   </div>
+  </a>
+  <a href="#">
+   <div>
+    <div class="brlt">
+     <h4>映像淘宝</h4>
+     <p>超火短视频</p>
+     </div>
+    <img src="image/main-five-11.png">
+   </div>
+   <div class="trr">
+    <img src="image/main-five-12.png">
+   </div>
+  </a>
+ </div>
+ <!--淘宝直播-->
+ <div class="main-six">
+  <a href="#" class="tl">
+   <div class="tlt">
+    <p>淘宝直播</p>
+   </div>
+   <img src="image/main-six-1.png">
+   <div class="tlb">
+    <h4>人人都是购物最新风向标</h4>
+    <p>主播知无不言，言无不尽!</p>
+    <div>
+     <img src="image/main-six-6.png">
+    </div>
+   </div>
+  </a>
+  <a href="#" class="tr">
+   <img src="image/main-six-2.png">
+   <div class="trb">
+    <h4>主播优选</h4>
+    <p>小警察制服</p>
+   </div>
+  </a>
+  <a href="#">
+   <img src="image/main-six-3.png">
+   <div class="mb">
+    <h4>亲子乐园</h4>
+    <p>儿童凉拖鞋</p>
+   </div>
+  </a>
+  <a href="#">
+   <img src="image/main-six-4.png">
+   <div class="mb">
+    <h4>乐家乐活</h4>
+    <p>玻璃防爆茶壶</p>
+   </div>
+  </a>
+  <a href="#" class="none">
+   <img src="image/main-six-5.png">
+   <div class="mb">
+    <h4>美食美味</h4>
+    <p>新鲜青皮芒果</p>
+   </div>
+  </a>
+  <a href="#" class="b">
+    <h4><span>抢鲜</span>夏装上新，跟着主播买买买</h4>
+    <p>不撞衫<span>&gt;</span></p>
+  </a>
+ </div>
+ <!--买遍全球-->
+ <div class="main-seven common">
+  <a href="#" class="tl">
+   <div class="tlt seventlt">
+    <p>买遍全球</p>
+   </div>
+   <img src="image/main-seven-1.png">
+   <div class="tlb">
+    <h4>轻盈雪纺衫，清凉舒适又甜美</h4>
+   </div>
+  </a>
+  <a href="#" class="tr seventr">
+   <div>
+    <h4>chuu</h4>
+    <p><img src="image/main-seven-11.png">韩国</p>
+   </div>
+   <img src="image/main-seven-2.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4 class="sevenh4">进口优选<img src="image/main-seven-12.png"></h4>
+    <p>正品保障15天售后无忧</p>
+   </div>
+   <img src="image/main-seven-3.png">
+   <img src="image/main-seven-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>全球品牌动态</h4>
+    <p>3186个品牌咨询和上新</p>
+   </div>
+   <img src="image/main-seven-5.png">
+   <img src="image/main-seven-6.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>海外买手现场</h4>
+    <p>8253人海外实时扫货中</p>
+   </div>
+   <img src="image/main-seven-7.png">
+   <img src="image/main-seven-8.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>海淘笔记</h4>
+    <p>百万口碑好货真实评价</p>
+   </div>
+   <img src="image/main-seven-9.png">
+   <img src="image/main-seven-10.png">
+  </a>
+ </div>
+ <!--我淘我家-->
+ <div class="main-eight common">
+  <a href="#" class="tl">
+   <div class="tlt eighttlt">
+    <p>我淘我家</p>
+   </div>
+   <img src="image/main-eight-1.png">
+   <div class="tlb">
+    <h4>蝴蝶恋上小脚丫</h4>
+   </div>
+  </a>
+  <a href="#" class="tr eighttr">
+   <h4>#孕期安睡</h4>
+   <img src="image/main-eight-2.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4 class="eighth4">极有家<img src="image/main-eight-11.png"></h4>
+    <p>老上海风情 2万元海派...</p>
+   </div>
+   <img src="image/main-eight-3.png">
+   <img src="image/main-eight-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>生活家</h4>
+    <p>网红冰棍秘方 这个夏天...</p>
+   </div>
+   <img src="image/main-eight-5.png">
+   <img src="image/main-eight-6.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>品质好物</h4>
+    <p>高颜值 好品质美物</p>
+   </div>
+   <img src="image/main-eight-7.png">
+   <img src="image/main-eight-8.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>苏宁易购</h4>
+    <p>iPhone 8 Plus低至5388元</p>
+   </div>
+   <img src="image/main-eight-9.png">
+   <img src="image/main-eight-10.png">
+  </a>
+ </div>
+ <!--潮流酷玩-->
+ <div class="main-nine common">
+  <a href="#" class="tl">
+   <div class="tlt ninetlt">
+    <p>潮流酷玩</p>
+   </div>
+   <img src="image/main-nine-1.png">
+   <div class="tlb">
+    <h4>苹果也要看哭了！智能穿戴比手机更科技</h4>
+   </div>
+  </a>
+  <a href="#" class="tr ninetr">
+   <h4>#90后潮搭</h4>
+   <img src="image/main-nine-2.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>潮男养成</h4>
+    <p>有品有范又风尚</p>
+   </div>
+   <img src="image/main-nine-3.png">
+   <img src="image/main-nine-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>装备天地</h4>
+    <p>武装你的兴趣爱好</p>
+   </div>
+   <img src="image/main-nine-5.png">
+   <img src="image/main-nine-6.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>科技前沿</h4>
+    <p>发现智能数码</p>
+   </div>
+   <img src="image/main-nine-7.png">
+   <img src="image/main-nine-8.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>男得好货</h4>
+    <p>潮流尖货 限时首发</p>
+   </div>
+   <img src="image/main-nine-9.png">
+   <img src="image/main-nine-10.png">
+  </a>
+ </div>
+ <!--实惠好货-->
+ <div class="main-ten common">
+  <a href="#" class="tl">
+   <div class="tlt tentlt">
+    <p>实惠好货</p>
+   </div>
+   <img src="image/main-ten-1.png">
+  </a>
+  <a href="#" class="tr tentr">
+   <h4>#99元购时尚</h4>
+   <img src="image/main-ten-2.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4 class="tenh4">天天特价<img src="image/main-eight-11.png"></h4>
+    <p>9.9元包邮好货随心抢</p>
+   </div>
+   <img src="image/main-ten-3.png">
+   <img src="image/main-ten-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>品牌闪购</h4>
+    <p>领劵享折上折</p>
+   </div>
+   <img src="image/main-ten-5.png">
+   <img src="image/main-ten-6.png">
+  </a>
+  <a href="#" class="b tenb">
+    <h4>天猫Outlets</h4>
+    <p>365天超低价</p>
+    <img src="image/main-ten-7.png">
+  </a>
+  <a href="#" class="b tenb">
+    <h4>量贩优选</h4>
+    <p>一分钟疯抢</p>
+    <img src="image/main-ten-8.png">
+  </a>
+  <a href="#" class="b tenb">
+    <h4>淘宝心选</h4>
+    <p>官方自营品...</p>
+    <img src="image/main-ten-9.png">
+  </a>
+  <a href="#" class="b tenb">
+    <h4>聚名品</h4>
+    <p>满1000减1...</p>
+    <img src="image/main-ten-10.png">
+  </a>
+ </div>
+ <!--时尚大咖-->
+ <div class="main-eleven common">
+  <a href="#" class="tl">
+   <div class="tlt eleventlt">
+    <p>时尚大咖</p>
+   </div>
+   <img src="image/main-eleven-1.png">
+   <div class="tlb">
+    <h4>领跑时尚界，NIKE又出新联名</h4>
+   </div>
+  </a>
+  <a href="#" class="tr eleventr">
+   <h4>#运动系装扮</h4>
+   <img src="image/main-eleven-2.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4 class="elevenh4">iFashion<img src="image/main-eleven-11.png"></h4>
+    <p>学明星变时髦精</p>
+   </div>
+   <img src="image/main-eleven-3.png">
+   <img src="image/main-eleven-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>全球时尚</h4>
+    <p>年会这么穿，博人眼球</p>
+   </div>
+   <img src="image/main-eleven-5.png">
+   <img src="image/main-eleven-6.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>新选大赏</h4>
+    <p>不能错过的明星同款大衣</p>
+   </div>
+   <img src="image/main-eleven-7.png">
+   <img src="image/main-eleven-8.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>非常大牌</h4>
+    <p>品牌好货 深度折扣</p>
+   </div>
+   <img src="image/main-eleven-9.png">
+   <img src="image/main-eleven-10.png">
+  </a>
+ </div>
+ <div class="main-elevens common">
+  <a href="#" class="b elevensb">
+    <h4>淘宝众筹</h4>
+    <p>抖音热门款</p>
+    <img src="image/main-elevens-1.png">
+  </a>
+  <a href="#" class="b elevensb bg">
+    <h4>魅力惠</h4>
+    <p>奢品热卖榜...</p>
+    <img src="image/main-elevens-2.png">
+  </a>
+  <a href="#" class="b elevensb">
+    <h4>淘票票</h4>
+    <p>复仇者联盟3</p>
+    <img src="image/main-elevens-3.png">
+  </a>
+  <a href="#" class="b elevensb bg">
+    <h4>兴农扶贫</h4>
+    <p>原产地美味</p>
+    <img src="image/main-elevens-4.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>口碑生活</h4>
+    <p>一日三餐 优惠都有</p>
+   </div>
+   <img src="image/main-elevens-5.png">
+   <img src="image/main-elevens-6.png">
+  </a>
+  <a href="#" class="b">
+   <div>
+    <h4>阿里健康</h4>
+    <p>快速怀孕干货总结</p>
+   </div>
+   <img src="image/main-elevens-7.png">
+   <img src="image/main-elevens-8.png">
+  </a>
+  <a href="#" class="elevensbb">
+    <h4><span>限时拍</span><span>淘乡甜</span>...</h4>
+    <p>更多服务<span>&gt;</span></p>
+  </a>
+ </div>
+ <!--生活研究所-->
+ <div class="main-twelve">
+  <a href="#" class="t">
+   <div>
+    <p>生活研究所</p>
+   </div>
+   <img src="image/main-twelve-1.webp">
+   <p class="tp">小正太</p>
+  </a>
+  <a href="#" class="t">
+   <img src="image/main-twelve-2.webp">
+   <p class="tp">豆蔻少女</p>
+  </a>
+  <a href="#" class="t bordernone">
+   <img src="image/main-twelve-3.webp">
+   <p class="tp">家有煮妇</p>
+  </a>
+  <a href="#" class="b bg">
+   <h4>攀岩正义</h4>
+   <p>欣达锁扣</p>
+   <img src="image/main-twelve-4.png">
+  </a>
+  <a href="#" class="b">
+   <h4>囤货小当家</h4>
+   <p>家庭装卫生纸</p>
+   <img src="image/main-twelve-5.png">
+  </a>
+  <a href="#" class="b bordernone bg">
+   <h4>日系软妹</h4>
+   <p>果壳家居服</p>
+   <img src="image/main-twelve-6.png">
+  </a>
+  <a href="#" class="b">
+   <h4>吃货的后裔</h4>
+   <p>韩世年货</p>
+   <img src="image/main-twelve-7.png">
+  </a>
+  <a href="#" class="b bg">
+   <h4>杯子控</h4>
+   <p>花茶随手杯</p>
+   <img src="image/main-twelve-8.png">
+  </a>
+  <a href="#" class="b bordernone">
+   <h4>美体师</h4>
+   <p>所望乳液</p>
+   <img src="image/main-twelve-9.png">
+  </a>
+ </div>
+ <!--每日好店-->
+ <div class="main-thirteen">
+  <a href="#" class="tl">
+   <div class="tlt">
+    <p>每日好店</p>
+   </div>
+   <img src="image/main-thirteen-1.png">
+   <div class="tlb">
+    <h4>特色好店</h4>
+    <p>Why？板蓝根竟成衣物染色匠</p>
+    <div>
+     <img src="image/main-thirteen-15.png">
+    </div>
+   </div>
+  </a>
+  <a href="#" class="tr">
+   <h4>神店推荐</h4>
+   <img src="image/main-thirteen-2.png">
+  </a>
+  <a href="#" class="b">
+   <h4>今日推荐<span>发现深藏的好店</span></h4>
+   <div>
+    <img src="image/main-thirteen-3.png" class="imgl">
+    <img src="image/main-thirteen-4.png" class="imgrt">
+    <img src="image/main-thirteen-5.png" class="imgrb">
+   </div> 
+  </a>
+  <a href="#" class="b">
+   <h4>精致有格<span>捡到一家小破店</span></h4>
+   <div>
+    <img src="image/main-thirteen-6.png" class="imgl">
+    <img src="image/main-thirteen-7.png" class="imgrt">
+    <img src="image/main-thirteen-8.png" class="imgrb">
+   </div> 
+  </a>
+  <a href="#" class="b">
+   <h4>包包控<span>店主脑洞顶破天</span></h4>
+   <div>
+    <img src="image/main-thirteen-9.png" class="imgl">
+    <img src="image/main-thirteen-10.png" class="imgrt">
+    <img src="image/main-thirteen-11.png" class="imgrb">
+   </div> 
+  </a>
+  <a href="#" class="b">
+   <h4>爱鞋人<span>想开家这种好店</span></h4>
+   <div>
+    <img src="image/main-thirteen-12.png" class="imgl">
+    <img src="image/main-thirteen-13.png" class="imgrt">
+    <img src="image/main-thirteen-14.png" class="imgrb">
+   </div> 
+  </a>
+ </div>
+ <!--猜你喜欢-->
+ <div class="main-fourteen">
+  <div class="tlt">
+   <h3><img src="image/main-fourteen-1.png" class="imgl">猜你喜欢<img src="image/main-fourteen-2.png" class="imgr"></h3>
+  </div>
+  <a href="#">
+   <img src="image/main-fourteen-3.png">
+   <p class="pt">[为你推荐]欢乐颂同款日式珐琅搪瓷壶开水壶热水壶叫壶鸣笛壶响水壶烧水壶</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">55</span><span class="spanr">36人付款</span></p>
+  </a>
+  <a href="#" class="bordernone">
+   <img src="image/main-fourteen-4.png">
+   <p class="pt">[为你推荐]美式欧式布艺沙发北欧现代简约粉色小户型沙发可定制轻奢ins沙发</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">2680</span><span class="spanr">17人付款</span></p>
+  </a>
+  <a href="#">
+   <img src="image/main-fourteen-5.png">
+   <p class="pt">[为你推荐]Jeko儿童医药箱家用大号出诊箱塑料收纳箱医用急救箱医药盒储物</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">28</span><span class="spanr">55人付款</span></p>
+  </a>
+  <a href="#" class="bordernone">
+   <img src="image/main-fourteen-6.png">
+   <p class="pt">[为你推荐]机械式核桃夹子钳子 夹核桃器 整粒剥山核桃夹</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">35</span><span class="spanr">58人付款</span></p>
+  </a>
+  <a href="#">
+   <img src="image/main-fourteen-7.png">
+   <p class="pt">[为你推荐]家用 面条机压面机配件 晾面架 挂面架 晒干面条架 挂面机包邮</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">29.8</span><span class="spanr">27人付款</span></p>
+  </a>
+  <a href="#" class="bordernone">
+   <img src="image/main-fourteen-8.png">
+   <p class="pt">[为你推荐]欢乐颂 加厚珐琅搪瓷  煤气电磁炉烧水壶 自鸣 鸣叫壶 凉水壶包邮</p>
+   <p class="pb"><span class="spanl">¥</span><span class="spanc">85</span><span class="spanr">54人付款</span></p>
+  </a>
+ </div>
+ <!--登录注册-->
+ <div class="main-fifteen">
+  <a href="#">登录</a>
+  <a href="#">注册</a>
+  <a href="#">电脑版</a>
+  <a href="#">用户反馈</a>
+ </div>
+ <!--返回顶部-->
+ <div class="pagescroll" id="pagescroll">
+  <img src="image/scroll.png">
+  <p>顶部</p>
+ </div>
+</div>
+<!--尾部-->
+<footer>
+ <a href="#">
+  <img src="image/footer-1.png">
+  <p>首页</p>
+ </a>
+ <a href="#">
+  <img src="image/footer-2.png">
+  <p>物流</p>
+ </a>
+ <a href="#">
+  <img src="image/footer-3.png">
+  <p>购物车</p>
+ </a>
+ <a href="#">
+  <img src="image/footer-4.png">
+  <p>我的淘宝</p>
+ </a>
+ <a href="#">
+  <img src="image/footer-5.png">
+  <p>更多</p>
+ </a>
+</footer>
+<script src="../common_link/compatible.js"></script>
+<script src="static_tapbao_mobile.js"></script>
+</body>
+</html>

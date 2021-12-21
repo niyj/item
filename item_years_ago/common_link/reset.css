@@ -1,0 +1,27 @@
+/*reset css*/
+html,body,
+ul,ol,table,form,
+li,caption,th,tr,td,label,input,button,textarea,select,option,
+div,h1,h2,h3,h4,h5,h6,p,
+span,img,a,em,strong,b,i,q,blockquote,br,hr,
+address,code,pre,
+header,footer,nav,article,section,aside,main,figure,figcaption,
+datalist,audio,video,canvas,svg{
+	margin:0;
+    padding:0;
+    border:0;
+	font-size:100%;
+    background:transparent;
+	font-family:"Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+                /*Mac OS英文, Mac OS英文,Windows英文,Mac OS苹方,Mac OS冬青黑体,Mac OS黑体-简,Windows微软雅黑,Linux文泉驿微米黑,无衬线字体*/
+	}
+a{
+	text-decoration:none;
+	color:#000;
+ }
+li{
+	list-style:none;
+  }
+input{
+	outline:none;
+	}
